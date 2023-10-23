@@ -23,8 +23,8 @@ window:
   # Specified in number of columns/lines, not pixels. If both are zero this
   # setting is ignored.
   dimensions:
-    columns: 100
-    lines: 85
+    columns: 80
+    lines: 80
 
   # Window padding (changes require restart)
   #
@@ -55,7 +55,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: Windowed
+  startup_mode: Maximized 
 
   # Background opacity
   opacity: 1.0
@@ -733,36 +733,36 @@ schemes:
   Molokai: &Molokai
     # Default colors
     primary:
-      background: '0x151515'
-      foreground: '0xeaeaea'
+      background: '#151515'
+      foreground: '#eaeaea'
 
     # Colors the cursor will use if `custom_cursor_colors` is true
     cursor:
-      text: '0x000000'
-      cursor: '0xffffff'
+      text: '#000000'
+      cursor: '#ffffff'
 
     # Normal colors
     normal:
-      black:   '0x121212'
-      red:     '0xfa2573'
+      black:   '#121212'
+      red:     '#fa2573'
       # green:   '0x98e123' # Correct Molokai colour
-      green:   '0x9cff00' # Better looking colour
-      yellow:  '0xdfd460'
-      blue:    '0x1080d0'
-      magenta: '0x8700ff'
-      cyan:    '0x43a8d0'
-      white:   '0xbbbbbb'
+      green:   '#9cff00' # Better looking colour
+      yellow:  '#dfd460'
+      blue:    '#1080d0'
+      magenta: '#8700ff'
+      cyan:    '#43a8d0'
+      white:   '#bbbbbb'
 
     # Bright colors
     bright:
-      black:   '0x555555'
-      red:     '0xf6669d'
-      green:   '0xb1e05f'
-      yellow:  '0xfff26d'
-      blue:    '0x00afff'
-      magenta: '0xaf87ff'
-      cyan:    '0x51ceff'
-      white:   '0xffffff'
+      black:   '#555555'
+      red:     '#f6669d'
+      green:   '#b1e05f'
+      yellow:  '#fff26d'
+      blue:    '#00afff'
+      magenta: '#af87ff'
+      cyan:    '#51ceff'
+      white:   '#ffffff'
   Seoul256: &Seoul256
     # Default colors
     primary:
@@ -791,18 +791,44 @@ schemes:
       cyan:    '#87d7d7'
       white:   '#e4e4e4'
 
+  Sonokai: &Sonokai
+    primary:
+      background: "#171717"
+      foreground: "#e2e2e3"
+
+    normal:
+      black: "#181819"
+      red: "#fc5d7c"
+      green: "#9ed072"
+      yellow: "#e7c664"
+      blue: "#76cce0"
+      magenta: "#b39df3"
+      cyan: "#f39660"
+      white: "#e2e2e3"
+
+    bright:
+      black: "#7f8490"
+      red: "#fc5d7c"
+      green: "#9ed072"
+      yellow: "#e7c664"
+      blue: "#76cce0"
+      magenta: "#b39df3"
+      cyan: "#f39660"
+      white: "#e2e2e3"
+
 #------------------------------------------------------------------------------
 ########################    COLORSCHEMES AVAILABLE     ########################
 #------------------------------------------------------------------------------
 #                       *JellyBeans
+#                       *Sonokai
 #                       *Molokai
 #                       *Seoul256
+#                       *GruvboxDark
 #                       *Catppuccin-Mocha
 #                       *Catppuccin-Macchiato
 #                       *Catppuccin-Frappe
 #                       *DoomOne
 #                       *Dracula
-#                       *GruvboxDark
 #                       *MonokaiPro
 #                       *Nord
 #                       *OceanicNext
