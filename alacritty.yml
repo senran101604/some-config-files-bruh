@@ -15,7 +15,8 @@
 working_directory: C:\\Users\\Ranniel
 
 shell:
-  program: 'pwsh -nologo'
+  # program: 'pwsh -nologo'
+  program: 'wsl'
 
 window:
   # Window dimensions (changes require restart)
@@ -23,7 +24,7 @@ window:
   # Specified in number of columns/lines, not pixels. If both are zero this
   # setting is ignored.
   dimensions:
-    columns: 100
+    columns: 135
     lines: 28
 
   # Window padding (changes require restart)
@@ -81,7 +82,7 @@ font:
   # Style can be specified to pick a specific face.
   normal:
     family: UbuntuMono NF
-    # style: Light
+    # style: Medium
     # style: Retina
 
   # Point size of the font
@@ -822,6 +823,29 @@ schemes:
       cyan: "#f39660"
       white: "#e2e2e3"
 
+  Melange: &Melange
+    primary:
+      foreground: '#ECE1D7'
+      background: '#151515'
+    normal:
+      black:   '#34302C'
+      red:     '#BD8183'
+      green:   '#78997A'
+      yellow:  '#E49B5D'
+      blue:    '#7F91B2'
+      magenta: '#B380B0'
+      cyan:    '#7B9695'
+      white:   '#C1A78E'
+    bright:
+      black:   '#867462'
+      red:     '#D47766'
+      green:   '#85B695'
+      yellow:  '#EBC06D'
+      blue:    '#A3A9CE'
+      magenta: '#CF9BC2'
+      cyan:    '#89B3B6'
+      white:   '#ECE1D7'
+
 #------------------------------------------------------------------------------
 ########################    COLORSCHEMES AVAILABLE     ########################
 #------------------------------------------------------------------------------
@@ -842,8 +866,9 @@ schemes:
 #                       *SolarizedLight
 #                       *SolarizedDark
 #                       *TomorrowNight
+#                       *Melange
 
-colors: *JellyBeans
+colors: *Melange
 
 
   # Indexed Colors
