@@ -12,11 +12,11 @@
   # You can verify this by checking for the presence of `smso` and `sitm` in
   # `infocmp xterm-256color`.
   # TERM: xterm-256color-italic
-working_directory: C:\\Users\\Ranniel
+# working_directory: C:\\Users\\Ranniel
 
 shell:
-  # program: 'pwsh -nologo'
-  program: 'wsl'
+  program: 'bash'
+  # program: 'wsl'
 
 window:
   # Window dimensions (changes require restart)
@@ -24,16 +24,16 @@ window:
   # Specified in number of columns/lines, not pixels. If both are zero this
   # setting is ignored.
   dimensions:
-    columns: 135
-    lines: 28
+    columns: 85
+    lines: 22
 
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is not scaled by
   # DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 0
-    y: 0
+    x: 7
+    y: 7
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
@@ -59,13 +59,13 @@ window:
   startup_mode: Maximized
 
   # window title
-  title: SenRan
+  # title: SenRan
 
   # Allow terminal applications to change Alacritty's window title.
   dynamic_title: false
 
   # Background opacity 0 - 1
-  opacity: 1
+  opacity: 0.8
 
 scrolling:
   # maximum number of lines in the scrollback buffer. Specifying '0' will
@@ -81,12 +81,16 @@ font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
   normal:
-    family: UbuntuMono NF
-    # style: Medium
+    # family: Ubuntu Mono
+    family: SauceCodeProNerdFontMono
+    # family: JetBrainsMonoNerdFontMono
+    # family: Source Code Pro
+    # family: HackNerdFont
+    # style: Light
     # style: Retina
 
   # Point size of the font
-  size: 15
+  size: 10.5
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -826,6 +830,7 @@ schemes:
   Melange: &Melange
     primary:
       foreground: '#ECE1D7'
+      # background: '#101010'
       background: '#151515'
     normal:
       black:   '#34302C'
@@ -845,6 +850,36 @@ schemes:
       magenta: '#CF9BC2'
       cyan:    '#89B3B6'
       white:   '#ECE1D7'
+
+  # Nightfox ( Terafox ) Alacritty Colors
+  Terafox: &Terafox
+    # Default colors
+    primary:
+      background: '#151515'
+      foreground: '#e6eaea'
+    # Normal colors
+    normal:
+      black:   '#2f3239'
+      red:     '#e85c51'
+      green:   '#7aa4a1'
+      yellow:  '#fda47f'
+      blue:    '#5a93aa'
+      magenta: '#ad5c7c'
+      cyan:    '#a1cdd8'
+      white:   '#ebebeb'
+    # Bright colors
+    bright:
+      black:   '#4e5157'
+      red:     '#eb746b'
+      green:   '#8eb2af'
+      yellow:  '#fdb292'
+      blue:    '#73a3b7'
+      magenta: '#b97490'
+      cyan:    '#afd4de'
+      white:   '#eeeeee'
+    indexed_colors:
+      - { index: 16, color: '#ff8349' }
+      - { index: 17, color: '#cb7985' }
 
 #------------------------------------------------------------------------------
 ########################    COLORSCHEMES AVAILABLE     ########################
@@ -867,6 +902,7 @@ schemes:
 #                       *SolarizedDark
 #                       *TomorrowNight
 #                       *Melange
+#                       *Terafox
 
 colors: *Melange
 
